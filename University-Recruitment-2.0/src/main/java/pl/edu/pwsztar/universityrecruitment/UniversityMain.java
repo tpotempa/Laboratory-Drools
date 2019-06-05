@@ -11,7 +11,7 @@ public class UniversityMain {
 		KieContainer kContainer = ks.getKieClasspathContainer();
 		KieSession kSession = kContainer.newKieSession("ksession-rules");
 		
-		UniversityCandidate uc = new UniversityCandidate(1L, "Anna", "Kowalska", 120, Boolean.FALSE, "Ekonomia", Boolean.FALSE);
+		UniversityCandidate uc = new UniversityCandidate(1L, "Anna", "Kowalska", 120, Boolean.FALSE);
 		kSession.insert(uc);		
 		kSession.fireAllRules();
 	}
