@@ -2,11 +2,14 @@ package rules
 
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 
-rule "Qualification DRL"
+// Informatyka
+rule "Qualification DRL / IN"
+dialect "mvel"
+agenda-group "admission-field"
 no-loop true
 when
-    $p : UniversityCandidate(examResult > 100)
+    $uc : UniversityCandidate(examResult > 100)
 then
-    $p.setAdmission(true);
+    $uc.setAdmission(true);
     System.out.println("Qualification DRL fired.");
 end
