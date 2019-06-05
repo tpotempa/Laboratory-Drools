@@ -8,6 +8,6 @@
 			<accessrule kind="accessible" pattern="javax/persistence/**"/>
 		</accessrules>
 	</classpathentry>
-	<classpathentry kind="lib" path="/media/DOCUMENTS/jboss-developer-other/slf4j-simple-1.7.26.jar"/>
+	<classpathentry kind="lib" path="slf4j/slf4j-simple-1.7.26.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
