@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="DROOLS/Drools">
+		<accessrules>
+			<accessrule kind="accessible" pattern="javax/persistence/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/media/DOCUMENTS/jboss-developer-other/slf4j-simple-1.7.26.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
