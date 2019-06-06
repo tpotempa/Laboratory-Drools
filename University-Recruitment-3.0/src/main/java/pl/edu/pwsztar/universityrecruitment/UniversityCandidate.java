@@ -23,9 +23,13 @@ public class UniversityCandidate implements java.io.Serializable
 
    private java.lang.Boolean olympicFinalist;
 
-   private java.lang.String qualificationType;
+   private java.lang.String qualificationType = "None";
+   
+   private java.lang.String logger = "";   
 
-   public UniversityCandidate()
+   private java.lang.Integer counter = 0;
+   
+public UniversityCandidate()
    {
    }
 
@@ -108,11 +112,44 @@ public class UniversityCandidate implements java.io.Serializable
    {
       this.qualificationType = qualificationType;
    }
+   
+   public java.lang.String getLogger()
+   {
+      return this.logger;
+   }
 
+   public void setLogger(java.lang.String logger)
+   {
+      this.logger = logger;
+   }
+
+   public void appendLogger(java.lang.String logger)
+   {
+      this.logger += logger + "\n";
+   }   
+
+   public java.lang.Integer getCounter() {
+	   return counter;
+   }
+
+   public void setCounter(java.lang.Integer counter) {
+	   this.counter = counter;
+   }
+   
+   public void incrementCounter() {
+	   this.counter++;
+   }
+   
+   public java.lang.String getCandidateInformation()
+   {
+      return this.firstName + " " + this.lastName + ". Field of study: " + this.fieldOfStudy + " (" + this.examResult + " points, OlympicFinalist: " + this.olympicFinalist + ").\n⮕ Admission: " +
+    		 this.admission + ". Qualification type: " + this.qualificationType + ". \n" + this.logger;
+   }
+   
    public UniversityCandidate(java.lang.Long id, java.lang.String firstName,
 	         java.lang.String lastName, java.lang.Integer examResult,
 	         java.lang.Boolean admission, java.lang.String fieldOfStudy,
-	         java.lang.Boolean olympicFinalist, java.lang.String qualificationType)
+	         java.lang.Boolean olympicFinalist, java.lang.String qualificationType, java.lang.String logger, java.lang.Integer counter)
 	   {
 	      this.id = id;
 	      this.firstName = firstName;
@@ -122,6 +159,8 @@ public class UniversityCandidate implements java.io.Serializable
 	      this.fieldOfStudy = fieldOfStudy;
 	      this.olympicFinalist = olympicFinalist;
 	      this.qualificationType = qualificationType;
+	      this.logger = logger;
+	      this.counter = counter;
 	   }
 
    public UniversityCandidate(java.lang.Long id, java.lang.String firstName,

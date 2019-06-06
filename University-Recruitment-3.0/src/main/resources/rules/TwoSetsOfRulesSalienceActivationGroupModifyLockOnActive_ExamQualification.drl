@@ -1,0 +1,57 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+
+// Informatyka
+rule "Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_modify_lock-on-active)"
+dialect "java"
+agenda-group "two_sets_of_rules_salience_activation-group_modify_lock-on-active"
+salience 100
+activation-group "group-1"
+lock-on-active true
+when
+    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka", counter < 10);
+then
+  	modify($uc) { 
+		setAdmission(true),
+    	setQualificationType("Exam qualification"),
+    	appendLogger("Rule 'Exam qualification / Informatyka' fired!"),
+		incrementCounter()
+    }    
+end
+
+// Automatyka i robotyka
+rule "Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group_modify_lock-on-active)"
+dialect "java"
+agenda-group "two_sets_of_rules_salience_activation-group_modify_lock-on-active"
+salience 100
+activation-group "group-1"
+lock-on-active true
+when
+    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka", counter < 10);
+then
+  	modify($uc) {
+		setAdmission(true),
+    	setQualificationType("Exam qualification"),
+    	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!"),
+		incrementCounter()
+    }    
+end
+
+// Elektrotechnika
+rule "Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_modify_lock-on-active)"
+dialect "java"
+agenda-group "two_sets_of_rules_salience_activation-group_modify_lock-on-active"
+salience 100
+activation-group "group-1"
+lock-on-active true
+when
+    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika", counter < 10);
+then
+  	modify($uc) {
+		setAdmission(true),
+    	setQualificationType("Exam qualification"),
+    	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!"),
+		incrementCounter()
+    }    
+end
