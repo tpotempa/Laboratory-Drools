@@ -24,7 +24,7 @@ public class UniversityMain {
 		kSession.insert(uc2);
 		kSession.insert(uc3);
 		kSession.insert(uc4);
-		kSession.insert(uc5);
+		//kSession.insert(uc5);
 		
 		// Example 1.1
 		kSession.getAgenda().getAgendaGroup("one_set_of_rules").setFocus();
