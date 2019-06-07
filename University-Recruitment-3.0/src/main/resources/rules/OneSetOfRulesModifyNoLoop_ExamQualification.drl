@@ -8,10 +8,9 @@ dialect "java"
 agenda-group "one_set_of_rules_modify_no-loop"
 no-loop true
 when
-    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka");
-    $ud : UniversityCandidate($uc.counter < 10);
+    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka", counter < 10);
 then
-  	modify($ud) { 
+  	modify($uc) { 
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
     	appendLogger("Rule 'Exam qualification / Informatyka' fired!"),
@@ -25,10 +24,9 @@ dialect "java"
 agenda-group "one_set_of_rules_modify_no-loop"
 no-loop true
 when
-    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka");
-    $ud : UniversityCandidate($uc.counter < 10);
+    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka", counter < 10);
 then
-  	modify($ud) { 
+  	modify($uc) { 
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
     	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!"),
@@ -42,10 +40,9 @@ dialect "java"
 agenda-group "one_set_of_rules_modify_no-loop"
 no-loop true
 when
-    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika");
-    $ud : UniversityCandidate($uc.counter < 10);
+    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika", counter < 10);
 then
-  	modify($ud) { 
+  	modify($uc) { 
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
     	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!"),
