@@ -1,0 +1,12 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+
+rule "Qualification DRL"
+dialect "mvel"
+when
+    $uc : UniversityCandidate(examResult > 100)
+then
+    $uc.setAdmission(true);
+    System.out.println("Qualification DRL fired.");
+end
