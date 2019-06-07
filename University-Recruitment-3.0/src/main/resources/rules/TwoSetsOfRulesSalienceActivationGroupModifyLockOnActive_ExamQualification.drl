@@ -10,13 +10,12 @@ salience 100
 activation-group "group-1"
 lock-on-active true
 when
-    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka", counter < 10);
+    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka");
 then
   	modify($uc) { 
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
-    	appendLogger("Rule 'Exam qualification / Informatyka' fired!"),
-		incrementCounter()
+    	appendLogger("Rule 'Exam qualification / Informatyka' fired!")
     }    
 end
 
@@ -28,13 +27,12 @@ salience 100
 activation-group "group-1"
 lock-on-active true
 when
-    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka", counter < 10);
+    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka");
 then
   	modify($uc) {
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
-    	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!"),
-		incrementCounter()
+    	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!")
     }    
 end
 
@@ -46,12 +44,11 @@ salience 100
 activation-group "group-1"
 lock-on-active true
 when
-    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika", counter < 10);
+    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika");
 then
   	modify($uc) {
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
-    	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!"),
-		incrementCounter()
+    	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!")
     }    
 end

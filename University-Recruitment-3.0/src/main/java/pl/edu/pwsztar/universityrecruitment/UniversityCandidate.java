@@ -15,7 +15,9 @@ public class UniversityCandidate implements java.io.Serializable
 
    private java.lang.String lastName;
 
-   private java.lang.Integer examResult;
+   private java.lang.String gender;
+   
+   private java.lang.Double examResult;
 
    private java.lang.Boolean admission = Boolean.FALSE;
    
@@ -63,12 +65,12 @@ public UniversityCandidate()
       this.lastName = lastName;
    }
 
-   public java.lang.Integer getExamResult()
+   public java.lang.Double getExamResult()
    {
       return this.examResult;
    }
 
-   public void setExamResult(java.lang.Integer examResult)
+   public void setExamResult(java.lang.Double examResult)
    {
       this.examResult = examResult;
    }
@@ -140,6 +142,14 @@ public UniversityCandidate()
 	   this.counter++;
    }
    
+   public java.lang.String getGender() {
+		return gender;
+   }
+
+	public void setGender(java.lang.String gender) {
+		this.gender = gender;
+	}
+	
    public java.lang.String getCandidateInformation()
    {
       return this.firstName + " " + this.lastName + ". Field of study: " + this.fieldOfStudy + " (" + this.examResult + " points, OlympicFinalist: " + this.olympicFinalist + ").\n⮕ Admission: " +
@@ -147,9 +157,10 @@ public UniversityCandidate()
    }
    
    public UniversityCandidate(java.lang.Long id, java.lang.String firstName,
-	         java.lang.String lastName, java.lang.Integer examResult,
+	         java.lang.String lastName, java.lang.Double examResult,
 	         java.lang.Boolean admission, java.lang.String fieldOfStudy,
-	         java.lang.Boolean olympicFinalist, java.lang.String qualificationType, java.lang.String logger, java.lang.Integer counter)
+	         java.lang.Boolean olympicFinalist, java.lang.String qualificationType,
+	         java.lang.String logger, java.lang.Integer counter, java.lang.String gender)
 	   {
 	      this.id = id;
 	      this.firstName = firstName;
@@ -161,12 +172,13 @@ public UniversityCandidate()
 	      this.qualificationType = qualificationType;
 	      this.logger = logger;
 	      this.counter = counter;
+	      this.gender = gender;
 	   }
 
    public UniversityCandidate(java.lang.Long id, java.lang.String firstName,
-	         java.lang.String lastName, java.lang.Integer examResult,
+	         java.lang.String lastName, java.lang.Double examResult,
 	         java.lang.Boolean admission, java.lang.String fieldOfStudy,
-	         java.lang.Boolean olympicFinalist)
+	         java.lang.Boolean olympicFinalist, java.lang.String gender)
 	   {
 	      this.id = id;
 	      this.firstName = firstName;
@@ -175,5 +187,6 @@ public UniversityCandidate()
 	      this.admission = admission;
 	      this.fieldOfStudy = fieldOfStudy;
 	      this.olympicFinalist = olympicFinalist;
+	      this.gender = gender;
 	   }
 }
