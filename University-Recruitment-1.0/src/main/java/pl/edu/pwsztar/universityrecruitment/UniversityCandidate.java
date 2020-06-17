@@ -10,13 +10,9 @@ public class UniversityCandidate implements java.io.Serializable
    @javax.persistence.Id
    @javax.persistence.SequenceGenerator(sequenceName = "UNIVERSITYCANDIDATE_ID_SEQ", name = "UNIVERSITYCANDIDATE_ID_GENERATOR")
    private java.lang.Long id;
-
    private java.lang.String firstName;
-
    private java.lang.String lastName;
-
    private java.lang.Integer examResult;
-
    private java.lang.Boolean admission = Boolean.FALSE;
    
    public UniversityCandidate()
