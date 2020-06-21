@@ -20,7 +20,7 @@ public class UniversityMainIntermediate {
 		kSession.insert(uc);
 
 		// ZESTAW REGUŁ ŚREDNIOZAAWANSOWANYCH		
-		// HOW-TO :: Uruchomienie przykładu.
+		// HOW-TO :: Uruchomienie przykładu!
 		// Każdy przykład (Example 1 - Example 4) należy uruchamiać niezależnie.
 		// W celu uruchomienia określonego przykładu należy ustawić wartość zmiennej example. 
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.

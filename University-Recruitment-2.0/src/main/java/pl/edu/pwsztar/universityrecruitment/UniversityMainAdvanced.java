@@ -36,7 +36,7 @@ public class UniversityMainAdvanced {
 		}
 
 		// ZESTAW REGUŁ ZAAWANSOWANYCH
-		// HOW-TO :: Uruchomienie przykładu.
+		// HOW-TO :: Uruchomienie przykładu!
 		// Każdy przykład (Example 1 - Example 1) należy uruchamiać niezależnie.
 		// W celu uruchomienia określonego przykładu należy ustawić wartość zmiennej example. 
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
