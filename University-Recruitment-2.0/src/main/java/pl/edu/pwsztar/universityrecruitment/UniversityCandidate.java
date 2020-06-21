@@ -12,23 +12,14 @@ public class UniversityCandidate implements java.io.Serializable
    private java.lang.Long id;
 
    private java.lang.String firstName;
-
    private java.lang.String lastName;
-
-   private java.lang.String gender;
-   
+   private java.lang.String gender; 
    private java.lang.Double examResult;
-
-   private java.lang.Boolean admission = Boolean.FALSE;
-   
+   private java.lang.Boolean admission = Boolean.FALSE;  
    private java.lang.String fieldOfStudy;
-
    private java.lang.Boolean olympicFinalist;
-
-   private java.lang.String qualificationType = "None";
-   
+   private java.lang.String qualificationType = "None";  
    private java.lang.String logger = "";   
-
    private java.lang.Integer counter = 0;
    
 public UniversityCandidate()

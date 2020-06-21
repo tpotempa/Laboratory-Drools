@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< Upstream, based on branch 'master' of https://github.com/tpotempa/Laboratory-Drools.git
 	<name>Laboratory-Drools8</name>
+=======
+	<name>Laboratory-Drools</name>
+>>>>>>> faf4854 UR 2.0.
 	<comment></comment>
 	<projects>
 	</projects>
