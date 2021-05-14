@@ -33,7 +33,7 @@ public class UniversityMainSimple {
 		
 		// Dodanie do przetwarzania zbioru 5 faktów
 		for(UniversityCandidate fact:uc) {
-			kSession.insert(fact);			
+			kSession.insert(fact);
 		}
 		
 		// ZESTAW REGUŁ PROSTYCH
@@ -89,6 +89,8 @@ public class UniversityMainSimple {
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły ze zbioru "OlympicQualification" są wykonywane z MODFIKACJĄ faktu
 			// powodującą uruchomienie ponownego wnioskowania.
+			// Modyfikacja polega na 2-krotnym zwiększeniu liczby uzyskanych punktów egzaminacyjnych
+			// (examResult) i jest bonusem dla kandydata będącego finalistą olimpiady przedmiotowej.
 			// Reguły posiadają parametry no-loop oraz salience.
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_bonus_salience_modify_no-loop").setFocus();
 			break;
@@ -109,6 +111,7 @@ public class UniversityMainSimple {
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
 		kSession.fireAllRules();
+		// System.out.println("Number of facts in Working Memory (Exit Point): " + kSession.getFactCount());
 		kSession.dispose();
 
 		// Logowanie zebranych informacji
