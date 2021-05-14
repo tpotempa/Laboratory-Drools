@@ -50,7 +50,7 @@ public class UniversityMainAdvanced {
 			// OPIS: Uruchamianie 3 zbiorów reguł kwalifikacyjnych. Zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// PYTANIE: W jakiej kolejności wykonują się reguły?
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_bonus_salience_modify_lock-on-active").setFocus();
+			kSession.getAgenda().getAgendaGroup("three_sets_of_rules_bonus_salience_modify_lock-on-active").setFocus();
 			break;
 		}
 		
