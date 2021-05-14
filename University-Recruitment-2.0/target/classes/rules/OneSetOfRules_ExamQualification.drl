@@ -9,7 +9,7 @@ agenda-group "one_set_of_rules"
 when
     $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka");
 then
-    $uc.setAdmission(true);
+    $uc.setAdmission(Boolean.TRUE);
     $uc.setQualificationType("Exam qualification");
     $uc.appendLogger("Rule 'Exam qualification / Informatyka' fired!");
 end
@@ -21,7 +21,7 @@ agenda-group "one_set_of_rules"
 when
     $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka");
 then
-    $uc.setAdmission(true);
+    $uc.setAdmission(Boolean.TRUE);
     $uc.setQualificationType("Exam qualification");
     $uc.appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!");
 end
@@ -33,7 +33,7 @@ agenda-group "one_set_of_rules"
 when
     $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika");
 then
-    $uc.setAdmission(true);
+    $uc.setAdmission(Boolean.TRUE);
     $uc.setQualificationType("Exam qualification");
     $uc.appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!");
 end

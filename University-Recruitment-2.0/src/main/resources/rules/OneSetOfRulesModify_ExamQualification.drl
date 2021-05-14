@@ -10,7 +10,7 @@ when
     $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka", counter < 10);
 then
   	modify($uc) { 
-		setAdmission(true),
+		setAdmission(Boolean.TRUE),
     	setQualificationType("Exam qualification"),
     	appendLogger("Rule 'Exam qualification / Informatyka' fired!"),
 		incrementCounter()
@@ -25,7 +25,7 @@ when
     $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka", counter < 10);
 then
   	modify($uc) { 
-		setAdmission(true),
+		setAdmission(Boolean.TRUE),
     	setQualificationType("Exam qualification"),
     	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!"),
 		incrementCounter()
@@ -40,7 +40,7 @@ when
     $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika", counter < 10);
 then
   	modify($uc) { 
-		setAdmission(true),
+		setAdmission(Boolean.TRUE),
     	setQualificationType("Exam qualification"),
     	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!"),
 		incrementCounter()

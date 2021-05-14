@@ -1,0 +1,20 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+
+// Kwalifikacja olimpijska
+rule "Olympic qualification (two_sets_of_rules_salience_modify_no-loop)"
+dialect "java"
+agenda-group "two_sets_of_rules_salience_modify_no-loop"
+salience 200
+no-loop true
+when
+    $uc : UniversityCandidate(olympicFinalist == true);
+then
+  	modify($uc) {
+		setAdmission(true),
+        setQualificationType("Olympic qualification"),
+    	appendLogger("Rule 'Olympic qualification' fired!"),
+		incrementCounter()    	
+    }      
+end
