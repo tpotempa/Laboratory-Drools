@@ -9,7 +9,7 @@ agenda-group "two_sets_of_rules_salience_modify_lock-on-active"
 salience 100
 lock-on-active true
 when
-    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka", counter < 10);
+    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka");
 then
   	modify($uc) { 
 		setAdmission(true),
@@ -26,7 +26,7 @@ agenda-group "two_sets_of_rules_salience_modify_lock-on-active"
 salience 100
 lock-on-active true
 when
-    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka", counter < 10);
+    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka");
 then
   	modify($uc) { 
 		setAdmission(true),
@@ -43,7 +43,7 @@ agenda-group "two_sets_of_rules_salience_modify_lock-on-active"
 salience 100
 lock-on-active true
 when
-    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika", counter < 10);
+    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika");
 then
   	modify($uc) { 
 		setAdmission(true),

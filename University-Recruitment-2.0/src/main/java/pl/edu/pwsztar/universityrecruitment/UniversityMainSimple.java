@@ -43,7 +43,7 @@ public class UniversityMainSimple {
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 
 		// Uruchamiany przykład
-		Integer example = 1;
+		Integer example = 2;
 
 		switch (example) {
 		case 1:
