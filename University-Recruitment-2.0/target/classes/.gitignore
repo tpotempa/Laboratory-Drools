@@ -1,8 +1,2 @@
-<<<<<<< Upstream, based on branch 'master' of https://github.com/tpotempa/Laboratory-Drools.git
-/META-INF/
-/logback-test.xml
-/pl/
 /rules/
-=======
 /pl/
->>>>>>> faf4854 UR 2.0.
