@@ -99,7 +99,7 @@ public class UniversityMainSimple {
 			// Uruchamianie tylko jednej reguły kwalifikacyjnej, gdyż nie jest zasadne
 			// 2-krotna kwalifikacja kandydata, z wykorzystaniem parametru activation-group, 
 			// który określa, że gdy dowolna reguła należąca do activation-group zostanie aktywowana, 
-			// uruchomienie wszystkich pozostałych należących do grupy jest anulowane
+			// uruchomienie wszystkich pozostałych należących do grupy jest anulowane.
 			// PYTANIE: Dlaczego nie wszystie fakty tj. kandydaci mają określoną decyzję?
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group").setFocus();
 			break;
