@@ -8,6 +8,7 @@ import org.kie.api.event.rule.DebugAgendaEventListener;
 import org.kie.api.event.rule.DebugRuleRuntimeEventListener;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.kie.api.logger.KieRuntimeLogger;
 
 public class UniversityMainAdvanced {
 
@@ -46,7 +47,7 @@ public class UniversityMainAdvanced {
 		
 		switch (example) {
 		case 1:
-			// Set 3. Example 1.
+			// Set 4. Example 1.
 			// OPIS: Uruchamianie 3 zbiorów reguł kwalifikacyjnych. Zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// PYTANIE: W jakiej kolejności wykonują się reguły?
@@ -57,6 +58,8 @@ public class UniversityMainAdvanced {
 		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
+		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
+		
 		kSession.fireAllRules();
 		kSession.dispose();
 				

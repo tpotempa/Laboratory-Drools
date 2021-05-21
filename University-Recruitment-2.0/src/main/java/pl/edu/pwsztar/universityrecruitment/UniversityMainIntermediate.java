@@ -5,6 +5,7 @@ import org.kie.api.event.rule.DebugAgendaEventListener;
 import org.kie.api.event.rule.DebugRuleRuntimeEventListener;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.kie.api.logger.KieRuntimeLogger;
 
 public class UniversityMainIntermediate {
 
@@ -30,7 +31,7 @@ public class UniversityMainIntermediate {
 
 		switch (example) {
 		case 1:
-			// Set 2. Example 1.
+			// Set 3. Example 1.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Uruchamianie tylko jednej reguły kwalifikacyjnej, gdyż nie jest zasadne
@@ -41,7 +42,7 @@ public class UniversityMainIntermediate {
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group").setFocus();
 			break;
 		case 2:
-			// Set 2. Example 2.
+			// Set 3. Example 2.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorow "ExamQualification" oraz "OlympicQualification" są
@@ -51,7 +52,7 @@ public class UniversityMainIntermediate {
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_modify").setFocus();
 			break;
 		case 3:
-			// Set 2. Example 3.
+			// Set 3. Example 3.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorow "ExamQualification" oraz "OlympicQualification" są
@@ -62,7 +63,7 @@ public class UniversityMainIntermediate {
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_modify_no-loop").setFocus();
 			break;
 		case 4:
-			// Set 2. Example 4.
+			// Set 3. Example 4.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorow "ExamQualification" oraz "OlympicQualification" są
@@ -75,7 +76,9 @@ public class UniversityMainIntermediate {
 		
 		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
-        kSession.addEventListener(new DebugRuleRuntimeEventListener());		
+        kSession.addEventListener(new DebugRuleRuntimeEventListener());
+		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
+		
 		kSession.fireAllRules();
 		kSession.dispose();
 				

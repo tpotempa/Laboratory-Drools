@@ -6,6 +6,7 @@ import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 rule "Exam Qualification / Informatyka (one_set_of_rules)"
 dialect "java"
 agenda-group "one_set_of_rules"
+
 when
     $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka");
 then

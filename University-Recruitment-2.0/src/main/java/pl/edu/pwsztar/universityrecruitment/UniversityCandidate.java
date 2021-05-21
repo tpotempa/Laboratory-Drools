@@ -144,7 +144,8 @@ public UniversityCandidate()
    public java.lang.String getCandidateInformation()
    {
       return this.firstName + " " + this.lastName + ". Field of study: " + this.fieldOfStudy + " (" + this.examResult + " points, OlympicFinalist: " + this.olympicFinalist + ").\n⮕ Admission: " +
-    		 this.admission + ". Qualification type: " + this.qualificationType + ". \n" + this.logger;
+    		 this.admission + ". Qualification type: " + this.qualificationType + ". \n" + 
+    		 "Object reference: " + Integer.toHexString(System.identityHashCode(this)) + ". \n" + this.logger;
    }
    
    public UniversityCandidate(java.lang.Long id, java.lang.String firstName,

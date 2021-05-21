@@ -8,6 +8,7 @@ import org.kie.api.event.rule.DebugAgendaEventListener;
 import org.kie.api.event.rule.DebugRuleRuntimeEventListener;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.kie.api.logger.KieRuntimeLogger;
 
 public class UniversityMainSimple {
 
@@ -38,7 +39,7 @@ public class UniversityMainSimple {
 		
 		// ZESTAW REGUŁ PROSTYCH
 		// HOW-TO :: Uruchomienie przykładu.
-		// Każdy przykład (Example 1 - Example 9) należy uruchamiać niezależnie.
+		// Każdy przykład (Example 1 - Example 6) należy uruchamiać niezależnie.
 		// W celu uruchomienia określonego przykładu należy ustawić wartość zmiennej example. 
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 
@@ -47,44 +48,21 @@ public class UniversityMainSimple {
 
 		switch (example) {
 		case 1:
-			// Set 1. Example 1.
-			// OPIS: Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
-			// kwalifikacyjnych.
-			kSession.getAgenda().getAgendaGroup("one_set_of_rules").setFocus();
-			break;
-		case 2:
-			// Set 1. Example 2.
-			// OPIS: Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
-			// kwalifikacyjnych z MODFIKACJĄ faktu powodującą uruchomienie ponownego
-			// wnioskowania.
-			// PYTANIE: W jakim celu używany jest counter?
-			kSession.getAgenda().getAgendaGroup("one_set_of_rules_modify").setFocus();
-			break;
-		case 3:
-			// Set 1. Example 3.
-			// OPIS: Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
-			// kwalifikacyjnych z MODFIKACJĄ faktu powodującą uruchomienie ponownego
-			// wnioskowania
-			// oraz klauzulą no-loop uniemożliwiającą ponowne uruchomienie reguły przez samą
-			// siebie w przypadku ponownego wnioskowania
-			kSession.getAgenda().getAgendaGroup("one_set_of_rules_modify_no-loop").setFocus();
-			break;
-		case 4:
-			// Set 1. Example 4.
+			// Set 2. Example 1.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules").setFocus();
 			break;
-		case 5:
-			// Set 1. Example 5.
+		case 2:
+			// Set 2. Example 2.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły sa uruchamiane z parametrem salience, który określa priorytet
 			// kolejności uruchomienia (wyższa wartość to wyższy priorytet)
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience").setFocus();
 			break;
-		case 6:
-			// Set 1. Example 6.
+		case 3:
+			// Set 2. Example 3.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorów są wykonywane z MODFIKACJĄ faktu
@@ -92,8 +70,8 @@ public class UniversityMainSimple {
 			// Reguły posiadają parametry no-loop oraz salience.
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_modify_no-loop").setFocus();
 			break;
-		case 7:
-			// Set 1. Example 7.
+		case 4:
+			// Set 2. Example 4.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorów są wykonywane z MODFIKACJĄ faktu
@@ -101,13 +79,13 @@ public class UniversityMainSimple {
 			// Reguły posiadają parametry lock-on-active oraz salience.
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_modify_lock-on-active").setFocus();
 			break;
-		case 8:
-			// Set 1. Example 8.
+		case 5:
+			// Set 2. Example 5.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguła ze zbioru "OlympicQualification" jest wykonywana z MODFIKACJĄ faktu
 			// powodującą uruchomienie ponownego wnioskowania.
-			// Modyfikacja polega na 2-krotnym zwiększeniu liczby punktów egzaminacyjnych, 
+			// Modyfikacja polega na 2-krotny  m zwiększeniu liczby punktów egzaminacyjnych, 
 			// uzyskanych przez kandydata będącego finalistą olimipiady.
 			// Należy podkreślić, że kandydat będący finalistą olimpiady nie może zostać przyjęty
 			// bezpośrednio na podstawie olimpiady. Jedyną podstawą kwalifikacji kandydata 
@@ -115,14 +93,14 @@ public class UniversityMainSimple {
 			// Reguły posiadają parametry no-loop oraz salience.
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_bonus_salience_modify_no-loop").setFocus();
 			break;
-		case 9:
-			// Set 1. Example 9.
+		case 6:
+			// Set 2. Example 6.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Uruchamianie tylko jednej reguły kwalifikacyjnej, gdyż nie jest zasadne
 			// 2-krotna kwalifikacja kandydata, z wykorzystaniem parametru activation-group, 
 			// który określa, że gdy dowolna reguła należąca do activation-group zostanie aktywowana, 
-			// uruchomienie wszystkich pozostałych należących do grupy jest anulowane.
+			// uruchomienie wszystkich pozostałych, które należą do grupy, jest anulowane.
 			// PYTANIE: Dlaczego nie wszystie fakty tj. kandydaci mają określoną decyzję?
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group").setFocus();
 			break;
@@ -131,6 +109,8 @@ public class UniversityMainSimple {
 		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
+		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
+		
 		kSession.fireAllRules();
 		kSession.dispose();
 
