@@ -56,7 +56,7 @@ public class UniversityMainVerySimple {
 			// ZAWSZE wywoływana tj. uzyskuje FOCUS.
 			// Wywołanie jest niejawne i odbywa się po jawnych wywołaniach agend.
 			// UWAGA: W celu wykonania testu niniejszego przykładu należy w zbiorze
-			// reguł MainOlympicQualification.drl zakomentować n/w wiersz: 
+			// reguł Main_OlympicQualification.drl zakomentować n/w wiersz: 
 			// agenda-group "do_not_focus_automatically"
 			// Po przeprowadzeniu testów należy odkomentować w/w wiersz.
 			break;
