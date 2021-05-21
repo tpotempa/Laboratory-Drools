@@ -65,44 +65,44 @@ public class UniversityMainSimple {
 			// Set 2. Example 3.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
-			// Reguły z obu zbiorów są wykonywane z MODFIKACJĄ faktu
-			// powodującą uruchomienie ponownego wnioskowania.
-			// Reguły posiadają parametry no-loop oraz salience.
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_modify_no-loop").setFocus();
-			break;
-		case 4:
-			// Set 2. Example 4.
-			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
-			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
-			// Reguły z obu zbiorów są wykonywane z MODFIKACJĄ faktu
-			// powodującą uruchomienie ponownego wnioskowania.
-			// Reguły posiadają parametry lock-on-active oraz salience.
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_modify_lock-on-active").setFocus();
-			break;
-		case 5:
-			// Set 2. Example 5.
-			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
-			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
-			// Reguła ze zbioru "OlympicQualification" jest wykonywana z MODFIKACJĄ faktu
-			// powodującą uruchomienie ponownego wnioskowania.
-			// Modyfikacja polega na 2-krotny  m zwiększeniu liczby punktów egzaminacyjnych, 
-			// uzyskanych przez kandydata będącego finalistą olimipiady.
-			// Należy podkreślić, że kandydat będący finalistą olimpiady nie może zostać przyjęty
-			// bezpośrednio na podstawie olimpiady. Jedyną podstawą kwalifikacji kandydata 
-			// jest liczba egzaminacyjnych.
-			// Reguły posiadają parametry no-loop oraz salience.
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_bonus_salience_modify_no-loop").setFocus();
-			break;
-		case 6:
-			// Set 2. Example 6.
-			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
-			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Uruchamianie tylko jednej reguły kwalifikacyjnej, gdyż nie jest zasadne
 			// 2-krotna kwalifikacja kandydata, z wykorzystaniem parametru activation-group, 
 			// który określa, że gdy dowolna reguła należąca do activation-group zostanie aktywowana, 
 			// uruchomienie wszystkich pozostałych, które należą do grupy, jest anulowane.
 			// PYTANIE: Dlaczego nie wszystie fakty tj. kandydaci mają określoną decyzję?
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group").setFocus();
+			break;			
+		case 4:
+			// Set 2. Example 4.
+			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
+			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
+			// Reguły z obu zbiorów są wykonywane z MODFIKACJĄ faktu
+			// powodującą uruchomienie ponownego wnioskowania.
+			// Reguły posiadają parametry no-loop oraz salience.
+			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_no-loop_MODIFY").setFocus();
+			break;
+		case 5:
+			// Set 2. Example 5.
+			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
+			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
+			// Reguły z obu zbiorów są wykonywane z MODFIKACJĄ faktu
+			// powodującą uruchomienie ponownego wnioskowania.
+			// Reguły posiadają parametry lock-on-active oraz salience.
+			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_lock-on-active_MODIFY").setFocus();
+			break;
+		case 6:
+			// Set 2. Example 6.
+			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
+			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
+			// Reguła ze zbioru "OlympicQualification" jest wykonywana z MODFIKACJĄ faktu
+			// powodującą uruchomienie ponownego wnioskowania.
+			// Modyfikacja polega na 2-krotnym zwiększeniu liczby punktów egzaminacyjnych, 
+			// uzyskanych przez kandydata będącego finalistą olimipiady.
+			// Należy podkreślić, że kandydat będący finalistą olimpiady nie może zostać przyjęty
+			// bezpośrednio na podstawie olimpiady. Jedyną podstawą kwalifikacji kandydata 
+			// jest liczba egzaminacyjnych.
+			// Reguły posiadają parametry no-loop oraz salience.
+			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_no-loop_bonus_MODIFY").setFocus();
 			break;
 		}
 

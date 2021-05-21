@@ -34,25 +34,14 @@ public class UniversityMainIntermediate {
 			// Set 3. Example 1.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
-			// Uruchamianie tylko jednej reguły kwalifikacyjnej, gdyż nie jest zasadne
-			// 2-krotna kwalifikacja kandydata, z wykorzystaniem parametru activation-group,
-			// który określa, że gdy dowolna reguła należąca do activation-group
-			// zostanie aktywowana, uruchomienie wszystkich pozostałych należących do grupy
-			// jest anulowane.
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group").setFocus();
-			break;
-		case 2:
-			// Set 3. Example 2.
-			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
-			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorow "ExamQualification" oraz "OlympicQualification" są
 			// wykonywane z MODFIKACJĄ faktu powodującą uruchomienie ponownego wnioskowania.
 			// Reguły posiadają parametry activation-group oraz salience.
 			// PYTANIE: Dlaczego reguły zostały uruchomione 10-krotnie?
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_modify").setFocus();
+			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_MODIFY").setFocus();
 			break;
-		case 3:
-			// Set 3. Example 3.
+		case 2:
+			// Set 3. Example 2.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorow "ExamQualification" oraz "OlympicQualification" są
@@ -62,8 +51,8 @@ public class UniversityMainIntermediate {
 			// 10-krotnie?
 			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_modify_no-loop").setFocus();
 			break;
-		case 4:
-			// Set 3. Example 4.
+		case 3:
+			// Set 3. Example 3.
 			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Oba zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
 			// Reguły z obu zbiorow "ExamQualification" oraz "OlympicQualification" są

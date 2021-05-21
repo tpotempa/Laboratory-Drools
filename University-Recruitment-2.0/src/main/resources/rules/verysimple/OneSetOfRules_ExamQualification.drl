@@ -19,6 +19,7 @@ end
 rule "Exam Qualification / Automatyka i robotyka (one_set_of_rules)"
 dialect "java"
 agenda-group "one_set_of_rules"
+
 when
     $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka");
 then

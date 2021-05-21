@@ -3,9 +3,9 @@ package rules
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 
 // Informatyka
-rule "Exam Qualification / Informatyka (one_set_of_rules_modify)"
+rule "Exam Qualification / Informatyka (one_set_of_rules_MODIFY)"
 dialect "java"
-agenda-group "one_set_of_rules_modify"
+agenda-group "one_set_of_rules_MODIFY"
 when
     $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka", counter < 10);
 then
@@ -18,9 +18,9 @@ then
 end
 
 // Automatyka i robotyka
-rule "Exam Qualification / Automatyka i robotyka (one_set_of_rules_modify)"
+rule "Exam Qualification / Automatyka i robotyka (one_set_of_rules_MODIFY)"
 dialect "java"
-agenda-group "one_set_of_rules_modify"
+agenda-group "one_set_of_rules_MODIFY"
 when
     $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka", counter < 10);
 then
@@ -33,9 +33,9 @@ then
 end
 
 // Elektrotechnika
-rule "Exam Qualification / Elektrotechnika (one_set_of_rules_modify)"
+rule "Exam Qualification / Elektrotechnika (one_set_of_rules_MODIFY)"
 dialect "java"
-agenda-group "one_set_of_rules_modify"
+agenda-group "one_set_of_rules_MODIFY"
 when
     $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika", counter < 10);
 then

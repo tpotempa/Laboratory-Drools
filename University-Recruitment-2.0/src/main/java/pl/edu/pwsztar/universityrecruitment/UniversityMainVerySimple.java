@@ -82,7 +82,7 @@ public class UniversityMainVerySimple {
 			// kwalifikacyjnych z MODFIKACJĄ faktu powodującą uruchomienie ponownego
 			// wnioskowania.
 			// PYTANIE: W jakim celu używany jest counter?
-			kSession.getAgenda().getAgendaGroup("one_set_of_rules_modify").setFocus();
+			kSession.getAgenda().getAgendaGroup("one_set_of_rules_MODIFY").setFocus();
 			break;
 		case 5:
 			// Set 1. Example 5.
@@ -91,7 +91,7 @@ public class UniversityMainVerySimple {
 			// wnioskowania
 			// oraz klauzulą no-loop uniemożliwiającą ponowne uruchomienie reguły przez samą
 			// siebie w przypadku ponownego wnioskowania
-			kSession.getAgenda().getAgendaGroup("one_set_of_rules_modify_no-loop").setFocus();
+			kSession.getAgenda().getAgendaGroup("one_set_of_rules_no-loop_MODIFY").setFocus();
 			break;
 		}
 
@@ -100,6 +100,13 @@ public class UniversityMainVerySimple {
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
 		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
 		
+		System.out.println("Reasoning No 1.");
+		kSession.fireAllRules();
+		// Uruchomienie dodatkowych wnioskowań, aby pokazać, że fakty, które nie są intencjonalnie 
+		// zmieniane w pamięcie roboczej, są przetwarzane ponownie tj. są przetwarzane tylko 1-krotnie.
+		System.out.println("Reasoning No 2.");
+		kSession.fireAllRules();
+		System.out.println("Reasoning No 3.");
 		kSession.fireAllRules();
 		kSession.dispose();
 
