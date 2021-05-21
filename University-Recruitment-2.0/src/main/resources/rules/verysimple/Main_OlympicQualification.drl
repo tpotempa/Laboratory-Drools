@@ -17,6 +17,6 @@ when
 then
     $uc.setAdmission(true);
     $uc.setQualificationType("Olympic qualification");
-    $uc.appendLogger("Agenda 'Main' got focus!");
+    $uc.appendLogger("Agenda 'MAIN' got focus!");
     $uc.appendLogger("Rule 'Olympic qualification' fired!");
 end

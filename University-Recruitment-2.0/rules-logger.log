@@ -11,8 +11,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_modify) [1]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_modify)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_MODIFY) [1]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -39,15 +39,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_no-loop) [1]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_no-loop)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
-      <factHandleIds>1</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_no-loop_bonus) [1]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_no-loop_bonus)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_no-loop_MODIFY) [1]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -60,22 +53,29 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (one_set_of_rules_modify) [1]</activationId>
-      <rule>Exam Qualification / Informatyka (one_set_of_rules_modify)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_no-loop_bonus_MODIFY) [1]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_no-loop_bonus_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_modify) [1]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_modify)</rule>
+      <activationId>Exam Qualification / Informatyka (one_set_of_rules_MODIFY) [1]</activationId>
+      <rule>Exam Qualification / Informatyka (one_set_of_rules_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop) [1]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop)</rule>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_MODIFY) [1]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_MODIFY) [1]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -88,8 +88,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (one_set_of_rules_no-loop_modify) [1]</activationId>
-      <rule>Exam Qualification / Informatyka (one_set_of_rules_no-loop_modify)</rule>
+      <activationId>Exam Qualification / Informatyka (one_set_of_rules_no-loop_MODIFY) [1]</activationId>
+      <rule>Exam Qualification / Informatyka (one_set_of_rules_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -104,13 +104,6 @@
       <type>4</type>
       <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group) [1]</activationId>
       <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
-      <factHandleIds>1</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop_bonus) [1]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop_bonus)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -137,22 +130,29 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (one_set_of_rules_modify) [2]</activationId>
-      <rule>Exam Qualification / Informatyka (one_set_of_rules_modify)</rule>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_bonus_MODIFY) [1]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_bonus_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Exam Qualification / Informatyka (one_set_of_rules_MODIFY) [2]</activationId>
+      <rule>Exam Qualification / Informatyka (one_set_of_rules_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_modify) [2]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_modify)</rule>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_MODIFY) [2]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop) [2]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop)</rule>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_MODIFY) [2]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -165,8 +165,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (one_set_of_rules_no-loop_modify) [2]</activationId>
-      <rule>Exam Qualification / Informatyka (one_set_of_rules_no-loop_modify)</rule>
+      <activationId>Exam Qualification / Informatyka (one_set_of_rules_no-loop_MODIFY) [2]</activationId>
+      <rule>Exam Qualification / Informatyka (one_set_of_rules_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -181,13 +181,6 @@
       <type>4</type>
       <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group) [2]</activationId>
       <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
-      <factHandleIds>2</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop_bonus) [2]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_no-loop_bonus)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -214,6 +207,13 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_bonus_MODIFY) [2]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_no-loop_bonus_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
+      <factHandleIds>2</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
       <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_no-loop) [4]</activationId>
       <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_no-loop)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
@@ -221,8 +221,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_modify) [4]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_modify)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_MODIFY) [4]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -249,15 +249,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_no-loop) [4]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_no-loop)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
-      <factHandleIds>4</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_no-loop_bonus) [4]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_no-loop_bonus)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_no-loop_MODIFY) [4]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -270,22 +263,29 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Automatyka i robotyka (one_set_of_rules_modify) [4]</activationId>
-      <rule>Exam Qualification / Automatyka i robotyka (one_set_of_rules_modify)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_no-loop_bonus_MODIFY) [4]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_no-loop_bonus_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group_modify) [4]</activationId>
-      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group_modify)</rule>
+      <activationId>Exam Qualification / Automatyka i robotyka (one_set_of_rules_MODIFY) [4]</activationId>
+      <rule>Exam Qualification / Automatyka i robotyka (one_set_of_rules_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_modify_no-loop) [4]</activationId>
-      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_modify_no-loop)</rule>
+      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_no-loop_MODIFY) [4]</activationId>
+      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_no-loop_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
+      <factHandleIds>4</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group_MODIFY) [4]</activationId>
+      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -298,8 +298,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Automatyka i robotyka (one_set_of_rules_no-loop_modify) [4]</activationId>
-      <rule>Exam Qualification / Automatyka i robotyka (one_set_of_rules_no-loop_modify)</rule>
+      <activationId>Exam Qualification / Automatyka i robotyka (one_set_of_rules_no-loop_MODIFY) [4]</activationId>
+      <rule>Exam Qualification / Automatyka i robotyka (one_set_of_rules_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -314,13 +314,6 @@
       <type>4</type>
       <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group) [4]</activationId>
       <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
-      <factHandleIds>4</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_modify_no-loop_bonus) [4]</activationId>
-      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_modify_no-loop_bonus)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -347,6 +340,13 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
+      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_no-loop_bonus_MODIFY) [4]</activationId>
+      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_no-loop_bonus_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
+      <factHandleIds>4</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
       <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_no-loop) [5]</activationId>
       <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_no-loop)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
@@ -354,8 +354,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_modify) [5]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_modify)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_MODIFY) [5]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -382,15 +382,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_no-loop) [5]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_no-loop)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
-      <factHandleIds>5</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_no-loop_bonus) [5]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_no-loop_bonus)</rule>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_no-loop_MODIFY) [5]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -398,6 +391,13 @@
       <type>4</type>
       <activationId>Olympic Qualification (main) [5]</activationId>
       <rule>Olympic Qualification (main)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
+      <factHandleIds>5</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_no-loop_bonus_MODIFY) [5]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_no-loop_bonus_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -424,27 +424,6 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_lock-on-active) [5]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_lock-on-active)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
-      <factHandleIds>5</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_lock-on-active) [4]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_lock-on-active)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
-      <factHandleIds>4</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Olympic qualification (two_sets_of_rules_salience_modify_lock-on-active) [1]</activationId>
-      <rule>Olympic qualification (two_sets_of_rules_salience_modify_lock-on-active)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
-      <factHandleIds>1</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
       <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_lock-on-active) [5]</activationId>
       <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_lock-on-active)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
@@ -461,6 +440,27 @@
       <type>4</type>
       <activationId>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_lock-on-active) [1]</activationId>
       <rule>Olympic qualification (two_sets_of_rules_salience_activation-group_modify_lock-on-active)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_lock-on-active_MODIFY) [5]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_lock-on-active_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
+      <factHandleIds>5</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_lock-on-active_MODIFY) [4]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_lock-on-active_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
+      <factHandleIds>4</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Olympic qualification (two_sets_of_rules_salience_lock-on-active_MODIFY) [1]</activationId>
+      <rule>Olympic qualification (two_sets_of_rules_salience_lock-on-active_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -501,15 +501,15 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_lock-on-active) [2]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_lock-on-active)</rule>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_lock-on-active_MODIFY) [2]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_lock-on-active_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@6f8f8a80</declarations>
       <factHandleIds>2</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_lock-on-active) [1]</activationId>
-      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_modify_lock-on-active)</rule>
+      <activationId>Exam Qualification / Informatyka (two_sets_of_rules_salience_lock-on-active_MODIFY) [1]</activationId>
+      <rule>Exam Qualification / Informatyka (two_sets_of_rules_salience_lock-on-active_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@1b9c1b51</declarations>
       <factHandleIds>1</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -522,8 +522,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_modify_lock-on-active) [4]</activationId>
-      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_modify_lock-on-active)</rule>
+      <activationId>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_lock-on-active_MODIFY) [4]</activationId>
+      <rule>Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_lock-on-active_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@72805168</declarations>
       <factHandleIds>4</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -605,22 +605,22 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Elektrotechnika (one_set_of_rules_modify) [5]</activationId>
-      <rule>Exam Qualification / Elektrotechnika (one_set_of_rules_modify)</rule>
+      <activationId>Exam Qualification / Elektrotechnika (one_set_of_rules_MODIFY) [5]</activationId>
+      <rule>Exam Qualification / Elektrotechnika (one_set_of_rules_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_modify) [5]</activationId>
-      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_modify)</rule>
+      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_no-loop_MODIFY) [5]</activationId>
+      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_modify_no-loop) [5]</activationId>
-      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_modify_no-loop)</rule>
+      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_MODIFY) [5]</activationId>
+      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -633,8 +633,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Elektrotechnika (one_set_of_rules_no-loop_modify) [5]</activationId>
-      <rule>Exam Qualification / Elektrotechnika (one_set_of_rules_no-loop_modify)</rule>
+      <activationId>Exam Qualification / Elektrotechnika (one_set_of_rules_no-loop_MODIFY) [5]</activationId>
+      <rule>Exam Qualification / Elektrotechnika (one_set_of_rules_no-loop_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -649,13 +649,6 @@
       <type>4</type>
       <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group) [5]</activationId>
       <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group)</rule>
-      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
-      <factHandleIds>5</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_modify_no-loop_bonus) [5]</activationId>
-      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_modify_no-loop_bonus)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
@@ -682,6 +675,13 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
+      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_no-loop_bonus_MODIFY) [5]</activationId>
+      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_no-loop_bonus_MODIFY)</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
+      <factHandleIds>5</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
       <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_modify_lock-on-active) [5]</activationId>
       <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_modify_lock-on-active)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
@@ -689,8 +689,8 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_modify_lock-on-active) [5]</activationId>
-      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_modify_lock-on-active)</rule>
+      <activationId>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_lock-on-active_MODIFY) [5]</activationId>
+      <rule>Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_lock-on-active_MODIFY)</rule>
       <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@34b9fc7d</declarations>
       <factHandleIds>5</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>

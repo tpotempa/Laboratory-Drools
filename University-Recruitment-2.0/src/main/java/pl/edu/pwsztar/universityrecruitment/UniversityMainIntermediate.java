@@ -49,7 +49,7 @@ public class UniversityMainIntermediate {
 			// Reguły posiadają parametry activation-group, salience oraz no-loop.
 			// PYTANIE: Dlaczego mimo użycia parametru no-loop reguły zostały uruchomione
 			// 10-krotnie?
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_modify_no-loop").setFocus();
+			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_no-loop_MODIFY").setFocus();
 			break;
 		case 3:
 			// Set 3. Example 3.
@@ -59,7 +59,7 @@ public class UniversityMainIntermediate {
 			// wykonywane z MODFIKACJĄ faktu powodującą uruchomienie ponownego wnioskowania.
 			// Reguły posiadają parametry activation-group, salience oraz lock-on-active.
 			// PYTANIE: Jak działa parametr lock-on-active?
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_modify_lock-on-active").setFocus();
+			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_lock-on-active_MODIFY").setFocus();
 			break;
 		}
 		

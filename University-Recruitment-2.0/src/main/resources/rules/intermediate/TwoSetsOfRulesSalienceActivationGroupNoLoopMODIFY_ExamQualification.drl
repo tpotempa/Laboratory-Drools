@@ -3,9 +3,9 @@ package rules
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 
 // Informatyka
-rule "Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_modify_no-loop)"
+rule "Exam Qualification / Informatyka (two_sets_of_rules_salience_activation-group_no-loop_MODIFY)"
 dialect "java"
-agenda-group "two_sets_of_rules_salience_activation-group_modify_no-loop"
+agenda-group "two_sets_of_rules_salience_activation-group_no-loop_MODIFY"
 salience 100
 activation-group "group-1"
 no-loop true
@@ -21,9 +21,9 @@ then
 end
 
 // Automatyka i robotyka
-rule "Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group_modify_no-loop)"
+rule "Exam Qualification / Automatyka i robotyka (two_sets_of_rules_salience_activation-group_no-loop_MODIFY)"
 dialect "java"
-agenda-group "two_sets_of_rules_salience_activation-group_modify_no-loop"
+agenda-group "two_sets_of_rules_salience_activation-group_no-loop_MODIFY"
 salience 100
 activation-group "group-1"
 no-loop true
@@ -39,9 +39,9 @@ then
 end
 
 // Elektrotechnika
-rule "Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_modify_no-loop)"
+rule "Exam Qualification / Elektrotechnika (two_sets_of_rules_salience_activation-group_no-loop_MODIFY)"
 dialect "java"
-agenda-group "two_sets_of_rules_salience_activation-group_modify_no-loop"
+agenda-group "two_sets_of_rules_salience_activation-group_no-loop_MODIFY"
 salience 100
 activation-group "group-1"
 no-loop true
