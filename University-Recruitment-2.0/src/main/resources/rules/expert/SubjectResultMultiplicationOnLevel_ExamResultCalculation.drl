@@ -1,0 +1,18 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+import pl.edu.pwsztar.universityrecruitment.ExamSubjectResult;
+
+// Kwalifikacja na podstawie egzaminu : Mnożenie wyniku z przedmiotu 
+// zdawanego na poziomie rozszerzonym przez 2
+rule "Subject result multiplication on exam level (exam_result_calculation)"
+dialect "java"
+
+// Atrybuty reguły
+agenda-group "exam_result_calculation"
+
+when
+	// Przesłanki
+then
+	// Akcje
+end
