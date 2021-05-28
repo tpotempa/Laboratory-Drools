@@ -3,9 +3,9 @@ package rules
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 
 // Kwalifikacja olimpijska
-rule "Olympic qualification (three_sets_of_rules_bonus_salience_lock-on-active_MODIFY)"
+rule "Olympic qualification (three_sets_of_rules_salience_lock-on-active_bonus_MODIFY)"
 dialect "java"
-agenda-group "three_sets_of_rules_bonus_salience_lock-on-active_MODIFY"
+agenda-group "three_sets_of_rules_salience_lock-on-active_bonus_MODIFY"
 salience 300
 lock-on-active true
 

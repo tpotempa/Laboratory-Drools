@@ -1,0 +1,17 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+import pl.edu.pwsztar.universityrecruitment.ExamSubjectResult;
+
+// Kwalifikacja na podstawie egzaminu : Sumowanie wyniku przedmiotu egzaminacyjnego
+rule "Subject result summation (exam_result_calculation)"
+dialect "java"
+
+// Atrybuty reguły
+agenda-group "exam_result_calculation"
+
+when
+	// Przesłanki
+then
+	// Akcje
+end

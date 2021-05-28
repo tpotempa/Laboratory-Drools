@@ -8,6 +8,7 @@ dialect "java"
 agenda-group "two_sets_of_rules_salience_lock-on-active_MODIFY"
 salience 100
 lock-on-active true
+
 when
     $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka");
 then

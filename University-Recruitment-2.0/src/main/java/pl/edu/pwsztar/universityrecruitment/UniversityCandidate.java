@@ -1,5 +1,7 @@
 package pl.edu.pwsztar.universityrecruitment;
 
+import java.util.ArrayList;
+
 @javax.persistence.Entity
 public class UniversityCandidate implements java.io.Serializable
 {
@@ -15,6 +17,7 @@ public class UniversityCandidate implements java.io.Serializable
    private java.lang.String lastName;
    private java.lang.String gender; 
    private java.lang.Double examResult;
+   private ArrayList<ExamSubjectResult> examSubjectResult;
    private java.lang.Boolean admission = Boolean.FALSE;  
    private java.lang.String fieldOfStudy;
    private java.lang.Boolean olympicFinalist;
@@ -66,7 +69,15 @@ public UniversityCandidate()
       this.examResult = examResult;
    }
 
-   public java.lang.Boolean getAdmission()
+   public ArrayList<ExamSubjectResult> getExamSubjectResult() {
+	  return examSubjectResult;
+   }
+
+   public void setExamSubjectResult(ArrayList<ExamSubjectResult> examSubjectResult) {
+	  this.examSubjectResult = examSubjectResult;
+   }
+
+	public java.lang.Boolean getAdmission()
    {
       return this.admission;
    }
@@ -176,6 +187,22 @@ public UniversityCandidate()
 	      this.firstName = firstName;
 	      this.lastName = lastName;
 	      this.examResult = examResult;
+	      this.admission = admission;
+	      this.fieldOfStudy = fieldOfStudy;
+	      this.olympicFinalist = olympicFinalist;
+	      this.gender = gender;
+	   }
+   
+   public UniversityCandidate(java.lang.Long id, java.lang.String firstName,
+	         java.lang.String lastName, ArrayList<ExamSubjectResult> examSubjectResult,
+	         java.lang.Boolean admission, java.lang.String fieldOfStudy,
+	         java.lang.Boolean olympicFinalist, java.lang.String gender)
+	   {
+	      this.id = id;
+	      this.firstName = firstName;
+	      this.lastName = lastName;
+	      this.examResult = 0.0;
+	      this.examSubjectResult = examSubjectResult;
 	      this.admission = admission;
 	      this.fieldOfStudy = fieldOfStudy;
 	      this.olympicFinalist = olympicFinalist;
