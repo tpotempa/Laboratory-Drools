@@ -1,0 +1,22 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+
+// Informatyka
+rule "Exam Qualification / Informatyka (exam_result_calculation)"
+dialect "java"
+
+// Atrybuty reguły
+agenda-group "exam_result_calculation"
+
+when
+	// Przesłanki
+then
+	// Akcje
+end
+
+// Reguły dla pozostałych kierunków
+// Automatyka i robotyka
+// Elektrotechnika
+// Pielęgniarstwo
+// Psychologia

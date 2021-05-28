@@ -1,0 +1,16 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+
+// Kwalifikacja olimpijska
+rule "Olympic qualification (exam_result_calculation)"
+dialect "java"
+
+// Atrybuty reguły
+agenda-group "exam_result_calculation"
+
+when
+	// Przesłanki
+then
+	// Akcje
+end

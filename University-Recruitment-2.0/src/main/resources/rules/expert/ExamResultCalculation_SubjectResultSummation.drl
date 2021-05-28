@@ -4,7 +4,9 @@ import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 import pl.edu.pwsztar.universityrecruitment.ExamSubjectResult;
 
 // Kwalifikacja na podstawie egzaminu : Sumowanie wyniku przedmiotu egzaminacyjnego
-rule "Subject result summation (exam_result_calculation)"
+
+// Informatyka
+rule "Subject result summation / Informatyka (exam_result_calculation)"
 dialect "java"
 
 // Atrybuty reguły
@@ -15,3 +17,9 @@ when
 then
 	// Akcje
 end
+
+// Reguły dla pozostałych kierunków
+// Automatyka i robotyka
+// Elektrotechnika
+// Pielęgniarstwo
+// Psychologia
