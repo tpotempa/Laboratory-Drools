@@ -3,7 +3,7 @@ package rules
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 import pl.edu.pwsztar.universityrecruitment.ExamSubjectResult;
 
-// Kwalifikacja na podstawie egzaminu : Odczytanie kolekcji przedmiotów egzaminacyjnych
+// Kwalifikacja na podstawie egzaminu : Odczytanie kolekcji wszystkich przedmiotów egzaminu maturalnego kandydata 
 rule "Get subjects for exam qualification (exam_result_calculation)"
 dialect "java"
 
