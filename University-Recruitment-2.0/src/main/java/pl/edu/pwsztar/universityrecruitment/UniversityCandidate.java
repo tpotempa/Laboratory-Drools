@@ -201,7 +201,7 @@ public UniversityCandidate()
 	      this.id = id;
 	      this.firstName = firstName;
 	      this.lastName = lastName;
-	      this.examResult = 0.0;
+	      this.examResult = 0.0D;
 	      this.examSubjectResult = examSubjectResult;
 	      this.admission = admission;
 	      this.fieldOfStudy = fieldOfStudy;
