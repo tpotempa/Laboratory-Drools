@@ -63,7 +63,7 @@ public class UniversityMainExpert {
 			kSession.insert(fact);			
 		}
 
-		// Uruchomianie zbiorów reguł kwalifikacyjnych "exam_result_calculation"
+		// Uruchomienie zbiorów reguł kwalifikacyjnych "exam_result_calculation"
 		kSession.getAgenda().getAgendaGroup("exam_result_calculation").setFocus();
 		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
