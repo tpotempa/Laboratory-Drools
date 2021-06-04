@@ -8,7 +8,6 @@ dialect "java"
 agenda-group "exam_result_calculation"
 salience 200
 activation-group "group-qualification"
-//lock-on-active true
 
 when
     $uc : UniversityCandidate(olympicFinalist == true);

@@ -10,7 +10,7 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.logger.KieRuntimeLogger;
 
-public class UniversityMainAdvanced {
+public class UniversityMainUpperIntermediate {
 
 	public static void main(String[] args) {
 		KieServices ks = KieServices.Factory.get();
@@ -48,13 +48,10 @@ public class UniversityMainAdvanced {
 		switch (example) {
 		case 1:
 			// Set 1. Example 1.
-			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Zbiory reguł nie
+			// OPIS: Uruchamianie 3 zbiorów reguł kwalifikacyjnych. Zbiory reguł nie
 			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
-			// UWAGA: Dla prawidłowej analizy działania własności PropertyReactive
-			// należy zmodyfikować klasę UniversityCandidate dodając wiersz kodu:
-			// @org.kie.api.definition.type.PropertyReactive
 			// PYTANIE: W jakiej kolejności wykonują się reguły?
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive").setFocus();
+			kSession.getAgenda().getAgendaGroup("three_sets_of_rules_salience_lock-on-active_bonus_MODIFY").setFocus();
 			break;
 		}
 		

@@ -9,7 +9,6 @@ rule "Subject result multiplication on exam level (exam_result_calculation)"
 dialect "java"
 agenda-group "exam_result_calculation"
 salience 500
-//lock-on-active true
 
 when
     $esr : ExamSubjectResult(examLevel == 'rozszerzony');
