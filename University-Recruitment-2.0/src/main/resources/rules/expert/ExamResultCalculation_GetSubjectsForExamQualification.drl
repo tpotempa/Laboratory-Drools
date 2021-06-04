@@ -4,11 +4,11 @@ import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 import pl.edu.pwsztar.universityrecruitment.ExamSubjectResult;
 
 // Kwalifikacja na podstawie egzaminu : Odczytanie kolekcji wszystkich przedmiotów egzaminu maturalnego kandydata 
-rule "Get subjects for exam qualification (exam_result_calculation)_"
+rule "Get subjects for exam qualification (exam_result_calculation)"
 dialect "java"
 
 // Atrybuty reguły
-agenda-group "exam_result_calculation_"
+agenda-group "exam_result_calculation"
 
 when
 	// Przesłanki
