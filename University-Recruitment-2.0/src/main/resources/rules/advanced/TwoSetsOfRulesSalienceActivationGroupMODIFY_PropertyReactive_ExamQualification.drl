@@ -15,7 +15,7 @@ then
   	modify($uc) { 
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
-    	appendLogger("Rule 'Exam qualification / Informatyka' fired!"),
+    	appendLogger("Rule 'Exam qualification / Informatyka' fired!")
     }    
 end
 
@@ -32,8 +32,7 @@ then
   	modify($uc) {
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
-    	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!"),
-		incrementCounter()
+    	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!")
     }    
 end
 
@@ -50,7 +49,6 @@ then
   	modify($uc) {
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
-    	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!"),
-		incrementCounter()
+    	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!")
     }    
 end
