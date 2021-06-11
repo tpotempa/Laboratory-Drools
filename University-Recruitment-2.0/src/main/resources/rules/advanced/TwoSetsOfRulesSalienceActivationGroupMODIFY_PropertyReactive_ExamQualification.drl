@@ -8,8 +8,9 @@ dialect "java"
 agenda-group "two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive"
 salience 100
 activation-group "group-1"
+
 when
-    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka", counter < 10);
+    $uc : UniversityCandidate(examResult > 100, fieldOfStudy == "Informatyka") @Watch(!*);
 then
   	modify($uc) { 
 		setAdmission(true),
@@ -25,8 +26,9 @@ dialect "java"
 agenda-group "two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive"
 salience 100
 activation-group "group-1"
+
 when
-    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka", counter < 10);
+    $uc : UniversityCandidate(examResult > 60, fieldOfStudy == "Automatyka i robotyka") @Watch(!*);
 then
   	modify($uc) {
 		setAdmission(true),
@@ -42,8 +44,9 @@ dialect "java"
 agenda-group "two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive"
 salience 100
 activation-group "group-1"
+
 when
-    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika", counter < 10);
+    $uc : UniversityCandidate(examResult > 80, fieldOfStudy == "Elektrotechnika") @Watch(!*);
 then
   	modify($uc) {
 		setAdmission(true),

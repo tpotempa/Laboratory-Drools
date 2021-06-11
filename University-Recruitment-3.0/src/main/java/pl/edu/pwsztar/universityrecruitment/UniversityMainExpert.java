@@ -43,7 +43,7 @@ public class UniversityMainExpert {
 
 		ArrayList<ExamSubjectResult> esr5 = new ArrayList<>();
 		esr5.add(new ExamSubjectResult("język polski", "podstawowy", 99D));
-		esr5.add(new ExamSubjectResult("matematyka", "podstawowy", 44D));
+		esr5.add(new ExamSubjectResult("matematyka", "rozszerzony", 44D));
 		esr5.add(new ExamSubjectResult("język angielski", "podstawowy", 77D));
 		esr5.add(new ExamSubjectResult("chemia", "rozszerzony", 100D));
 
@@ -52,11 +52,11 @@ public class UniversityMainExpert {
 		UniversityCandidate uc3 = new UniversityCandidate(3L, "Ewa", "Wiśniowa", esr3, Boolean.FALSE, "Elektrotechnika", Boolean.FALSE, "Female");
 		UniversityCandidate uc4 = new UniversityCandidate(4L, "Karol", "Gruszka", esr4, Boolean.FALSE, "Automatyka i robotyka", Boolean.TRUE, "Male");
 		UniversityCandidate uc5 = new UniversityCandidate(5L, "Kinga", "Poziomka", esr5, Boolean.FALSE, "Elektrotechnika", Boolean.TRUE, "Female");
-		uc1.setExamSubjectResult(esr1);
+			
 		// Utworzenie kolekcji faktów
 		// Przetwarzanie powinno być realizowane TYLKO dla pojedynczego faktu
 		List<UniversityCandidate> uc = new ArrayList<UniversityCandidate>();
-		uc.add(uc3);
+		uc.add(uc1);
 		
 		// Dodanie faktów do przetwarzania
 		for(UniversityCandidate fact:uc) {

@@ -41,14 +41,14 @@ end
 rule "Exam Qualification / Elektrotechnika (exam_result_calculation)"
 dialect "java"
 agenda-group "exam_result_calculation"
-salience 100
+salience 250
 activation-group "group-qualification"
 //lock-on-active true
 
 when
     $uc : UniversityCandidate(fieldOfStudy == "Elektrotechnika", examResult >= 80.0D);
 then
- 	$uc.appendLogger("Total candidate exam result = " + $uc.getExamResult());
+ 	$uc.appendLogger("Total candidate exam result = " + $uc.getExamResult() + "Minimum required exam result 80.0D");
 	$uc.setAdmission(true);
    	$uc.setQualificationType("Exam qualification");
    	$uc.appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!");

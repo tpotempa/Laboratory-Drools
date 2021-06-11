@@ -7,9 +7,10 @@ rule "Olympic qualification (two_sets_of_rules_salience_activation-group_MODIFY_
 dialect "java"
 agenda-group "two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive"
 salience 200
-//activation-group "group-1"
+activation-group "group-1"
+
 when
-    $uc : UniversityCandidate(olympicFinalist == true, counter < 10) @watch(*);
+    $uc : UniversityCandidate(olympicFinalist == true, counter < 10) @Watch(!*);
 then
   	modify($uc) {
 		setAdmission(true),

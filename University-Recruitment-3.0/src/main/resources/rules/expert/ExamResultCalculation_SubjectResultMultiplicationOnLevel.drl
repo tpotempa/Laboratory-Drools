@@ -17,5 +17,5 @@ then
   		setExamResult(2*$esr.getExamResult())
     }
   	
-  	System.out.println("Modify subject result *2 " + $esr.getExamSubject());
+  	System.out.println("Modify subject result * 2 " + $esr.getExamSubject());
 end

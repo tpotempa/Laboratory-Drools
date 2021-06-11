@@ -3,10 +3,9 @@ package pl.edu.pwsztar.universityrecruitment;
 import java.util.ArrayList;
 
 @javax.persistence.Entity
-//@org.kie.api.definition.type.PropertyReactive
+@org.kie.api.definition.type.PropertyReactive
 public class UniversityCandidate implements java.io.Serializable
 {
-
    static final long serialVersionUID = 1L;
 
    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "UNIVERSITYCANDIDATE_ID_GENERATOR")

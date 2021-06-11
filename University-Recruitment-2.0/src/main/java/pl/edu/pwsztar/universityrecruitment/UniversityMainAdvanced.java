@@ -23,40 +23,26 @@ public class UniversityMainAdvanced {
 		UniversityCandidate uc4 = new UniversityCandidate(4L, "Karol", "Gruszka", 135.0, Boolean.FALSE, "Automatyka i robotyka", Boolean.TRUE, "Male");
 		UniversityCandidate uc5 = new UniversityCandidate(5L, "Kinga", "Poziomka", 30.0, Boolean.FALSE, "Elektrotechnika", Boolean.TRUE, "Female");
 		
-		// Utworzenie kolekcji 5 faktów
+		// Przetwarzanie powinno być realizowane TYLKO dla pojedynczego faktu
 		List<UniversityCandidate> uc = new ArrayList<UniversityCandidate>();
 		uc.add(uc1);
-		uc.add(uc2);
-		uc.add(uc3);
-		uc.add(uc4);
-		uc.add(uc5);
 		
-		// Dodanie do przetwarzania zbioru 5 faktów
+		// Dodanie faktu do przetwarzania
 		for(UniversityCandidate fact:uc) {
 			kSession.insert(fact);			
 		}
 
 		// ZESTAW REGUŁ ZAAWANSOWANYCH
-		// HOW-TO :: Uruchomienie przykładu.
-		// Każdy przykład (Example 1 - Example 1) należy uruchamiać niezależnie.
-		// W celu uruchomienia określonego przykładu należy ustawić wartość zmiennej example. 
-		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 
-		// Uruchamiany przykład
-		Integer example = 1;
+		// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Zbiory reguł nie
+		// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
+		// UWAGA: Dla prawidłowej analizy działania własności PropertyReactive
+		// należy zmodyfikować klasę UniversityCandidate dodając wiersz kodu:
+		// @org.kie.api.definition.type.PropertyReactive
+		// PYTANIE: W jakiej kolejności wykonują się reguły?
+		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 		
-		switch (example) {
-		case 1:
-			// Set 1. Example 1.
-			// OPIS: Uruchamianie 2 zbiorów reguł kwalifikacyjnych. Zbiory reguł nie
-			// wykluczają się tj. mogą być uruchomione reguły z obu zbiorów.
-			// UWAGA: Dla prawidłowej analizy działania własności PropertyReactive
-			// należy zmodyfikować klasę UniversityCandidate dodając wiersz kodu:
-			// @org.kie.api.definition.type.PropertyReactive
-			// PYTANIE: W jakiej kolejności wykonują się reguły?
-			kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive").setFocus();
-			break;
-		}
+		kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive").setFocus();
 		
 		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
@@ -71,5 +57,4 @@ public class UniversityMainAdvanced {
 			System.out.println(fact.getCandidateInformation());
 		}
 	}
-
 }
