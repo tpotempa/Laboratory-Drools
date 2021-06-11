@@ -10,7 +10,7 @@ salience 200
 activation-group "group-1"
 
 when
-    $uc : UniversityCandidate(olympicFinalist == true, counter < 10) @Watch(!*);
+    $uc : UniversityCandidate(olympicFinalist == true) @Watch(!*);
 then
   	modify($uc) {
 		setAdmission(true),
