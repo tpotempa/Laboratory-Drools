@@ -16,6 +16,5 @@ then
 		setAdmission(true),
         setQualificationType("Olympic qualification."),
     	appendLogger("Rule 'Olympic qualification' fired!"),
-		incrementCounter()    	
     }    
 end

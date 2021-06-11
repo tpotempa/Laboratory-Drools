@@ -16,7 +16,6 @@ then
 		setAdmission(true),
     	setQualificationType("Exam qualification"),
     	appendLogger("Rule 'Exam qualification / Informatyka' fired!"),
-		incrementCounter()
     }    
 end
 
