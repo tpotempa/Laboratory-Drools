@@ -52,11 +52,11 @@ public class UniversityMainExpert {
 		UniversityCandidate uc3 = new UniversityCandidate(3L, "Ewa", "Wiśniowa", esr3, Boolean.FALSE, "Elektrotechnika", Boolean.FALSE, "Female");
 		UniversityCandidate uc4 = new UniversityCandidate(4L, "Karol", "Gruszka", esr4, Boolean.FALSE, "Automatyka i robotyka", Boolean.TRUE, "Male");
 		UniversityCandidate uc5 = new UniversityCandidate(5L, "Kinga", "Poziomka", esr5, Boolean.FALSE, "Elektrotechnika", Boolean.TRUE, "Female");
-		uc1.setExamSubjectResult(esr1);
+
 		// Utworzenie kolekcji faktów
 		// Przetwarzanie powinno być realizowane TYLKO dla pojedynczego faktu
 		List<UniversityCandidate> uc = new ArrayList<UniversityCandidate>();
-		uc.add(uc3);
+		uc.add(uc1);
 		
 		// Dodanie faktów do przetwarzania
 		for(UniversityCandidate fact:uc) {
@@ -65,13 +65,14 @@ public class UniversityMainExpert {
 
 		// Uruchomianie zbiorów reguł kwalifikacyjnych "exam_result_calculation"
 		kSession.getAgenda().getAgendaGroup("exam_result_calculation").setFocus();
-		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
 		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
 		
+		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.fireAllRules();
 		System.out.println("Number of facts in Working Memory (Exit Point): " + kSession.getFactCount());
+
 		kSession.dispose();
 				
 		// Logowanie zebranych informacji
@@ -79,5 +80,4 @@ public class UniversityMainExpert {
 			System.out.println(fact.getCandidateInformation());
 		}
 	}
-
 }

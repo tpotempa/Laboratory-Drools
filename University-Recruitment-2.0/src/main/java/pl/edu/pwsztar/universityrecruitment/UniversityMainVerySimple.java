@@ -43,7 +43,7 @@ public class UniversityMainVerySimple {
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 
 		// Uruchamiany przykład
-		Integer example = 4;
+		Integer example = 1;
 
 		switch (example) {
 		case 1:
@@ -95,19 +95,20 @@ public class UniversityMainVerySimple {
 			break;
 		}
 
-		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
 		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
 		
-		System.out.println("Reasoning No 1.");
+		System.out.println("Reasoning No 1. Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.fireAllRules();
-		// Uruchomienie dodatkowych wnioskowań, aby pokazać, że fakty, które nie są intencjonalnie 
-		// zmieniane w pamięcie roboczej, są przetwarzane ponownie tj. są przetwarzane tylko 1-krotnie.
-		System.out.println("Reasoning No 2.");
+		System.out.println("Reasoning No 1. Number of facts in Working Memory (Exit Point): " + kSession.getFactCount() + "\n");
+		
+		// Uruchomienie dodatkowego wnioskowania, w celu pokazania, że fakty, które nie są intencjonalnie 
+		// zmieniane w pamięcie roboczej, nie są przetwarzane ponownie tj. są przetwarzane tylko 1-krotnie.
+		System.out.println("Reasoning No 2. Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.fireAllRules();
-		System.out.println("Reasoning No 3.");
-		kSession.fireAllRules();
+		System.out.println("Reasoning No 2. Number of facts in Working Memory (Exit Point): " + kSession.getFactCount() + "\n");
+
 		kSession.dispose();
 
 		// Logowanie zebranych informacji

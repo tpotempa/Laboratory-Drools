@@ -36,7 +36,7 @@ public class UniversityMainUpperIntermediate {
 			kSession.insert(fact);			
 		}
 
-		// ZESTAW REGUŁ ZAAWANSOWANYCH
+		// ZESTAW REGUŁ ŚREDNIOZAAWANSOWANYCH WYŻSZYCH
 		// HOW-TO :: Uruchomienie przykładu.
 		// Każdy przykład (Example 1 - Example 1) należy uruchamiać niezależnie.
 		// W celu uruchomienia określonego przykładu należy ustawić wartość zmiennej example. 
@@ -55,12 +55,14 @@ public class UniversityMainUpperIntermediate {
 			break;
 		}
 		
-		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
 		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
 		
+		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.fireAllRules();
+		System.out.println("Number of facts in Working Memory (Exit Point): " + kSession.getFactCount());
+
 		kSession.dispose();
 				
 		// Logowanie zebranych informacji
@@ -68,5 +70,4 @@ public class UniversityMainUpperIntermediate {
 			System.out.println(fact.getCandidateInformation());
 		}
 	}
-
 }

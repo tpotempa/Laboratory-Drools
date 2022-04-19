@@ -6,7 +6,6 @@ import java.util.ArrayList;
 @org.kie.api.definition.type.PropertyReactive
 public class UniversityCandidate implements java.io.Serializable
 {
-
    static final long serialVersionUID = 1L;
 
    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "UNIVERSITYCANDIDATE_ID_GENERATOR")

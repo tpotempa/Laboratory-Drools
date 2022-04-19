@@ -44,12 +44,14 @@ public class UniversityMainAdvanced {
 		
 		kSession.getAgenda().getAgendaGroup("two_sets_of_rules_salience_activation-group_MODIFY_PropertyReactive").setFocus();
 		
-		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
 		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
 		
+		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.fireAllRules();
+		System.out.println("Number of facts in Working Memory (Exit Point): " + kSession.getFactCount());
+
 		kSession.dispose();
 				
 		// Logowanie zebranych informacji

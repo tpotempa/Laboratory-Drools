@@ -1,0 +1,28 @@
+<object-stream>
+<org.drools.core.audit.WorkingMemoryLog>
+  <version>6.1</version>
+  <events>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Qualification DRL [1]</activationId>
+      <rule>Qualification DRL</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@456abb66</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Qualification DRL [1]</activationId>
+      <rule>Qualification DRL</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@456abb66</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Qualification DRL [1]</activationId>
+      <rule>Qualification DRL</rule>
+      <declarations>$uc=pl.edu.pwsztar.universityrecruitment.UniversityCandidate@456abb66</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+  </events>
+</org.drools.core.audit.WorkingMemoryLog>
+</object-stream>
