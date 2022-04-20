@@ -1,0 +1,23 @@
+package rules
+
+import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+import pl.edu.pwsztar.universityrecruitment.ExamSubjectResult;
+
+// Kwalifikacja na podstawie egzaminu : Odczytanie kolekcji wszystkich przedmiotów egzaminu maturalnego kandydata 
+rule "Get subjects for exam qualification (exam_result_calculation)"
+dialect "java"
+agenda-group "exam_result_calculation"
+salience 600
+lock-on-active true
+
+when
+    $uc : UniversityCandidate();
+    $esr : ExamSubjectResult() from $uc.examSubjectResult;
+then
+  	insert($esr);
+  	modify($uc) {  	
+    	appendLogger("Rule 'Add subject for exam qualification (exam_result_calculation)' fired! Subject added: " + $esr.getExamSubject());  	
+    }
+
+  	System.out.println("Get subject " + $esr.getExamSubject());
+end
