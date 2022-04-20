@@ -1,6 +1,8 @@
 package rules
 
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 
 // Kwalifikacja olimpijska
 rule "Olympic Qualification (main)"
@@ -18,5 +20,6 @@ then
     $uc.setAdmission(true);
     $uc.setQualificationType("Olympic qualification");
     $uc.appendLogger("Agenda 'MAIN' got focus!");
+	$uc.appendLogger("Agenda execution start date/time: " + ZonedDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME));        
     $uc.appendLogger("Rule 'Olympic qualification' fired!");
 end

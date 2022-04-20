@@ -1,6 +1,8 @@
 package rules
 
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 
 // Informatyka
 rule "Exam Qualification / Informatyka (one_set_of_rules_MODIFY)"
@@ -12,6 +14,8 @@ then
   	modify($uc) { 
 		setAdmission(Boolean.TRUE),
     	setQualificationType("Exam qualification"),
+    	appendLogger("Agenda 'one_set_of_rules_MODIFY' got focus!"),
+		appendLogger("Agenda execution start date/time: " + ZonedDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME)),       
     	appendLogger("Rule 'Exam qualification / Informatyka' fired!"),
 		incrementCounter()
     }    
@@ -27,6 +31,8 @@ then
   	modify($uc) { 
 		setAdmission(Boolean.TRUE),
     	setQualificationType("Exam qualification"),
+    	appendLogger("Agenda 'one_set_of_rules_MODIFY' got focus!"),
+		appendLogger("Agenda execution start date/time: " + ZonedDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME)),       
     	appendLogger("Rule 'Exam qualification / Automatyka i robotyka' fired!"),
 		incrementCounter()
     }    
@@ -42,6 +48,8 @@ then
   	modify($uc) { 
 		setAdmission(Boolean.TRUE),
     	setQualificationType("Exam qualification"),
+    	appendLogger("Agenda 'one_set_of_rules_MODIFY' got focus!"),
+		appendLogger("Agenda execution start date/time: " + ZonedDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME)),       
     	appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!"),
 		incrementCounter()
     }        

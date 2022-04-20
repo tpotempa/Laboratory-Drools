@@ -3,7 +3,7 @@ package rules
 import pl.edu.pwsztar.universityrecruitment.UniversityCandidate;
 
 rule "Qualification DRL"
-dialect "mvel"
+dialect "java"
 when
     $uc : UniversityCandidate(examResult > 100)
 then
