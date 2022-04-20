@@ -43,7 +43,7 @@ public class UniversityMainVerySimple {
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 
 		// Uruchamiany przykład
-		Integer example = 4;
+		Integer example = 5;
 
 		switch (example) {
 		case 1:
@@ -68,6 +68,15 @@ public class UniversityMainVerySimple {
 			break;
 		case 3:
 			// Set 1. Example 3.
+			// OPIS: Przetwarzanie dwóch agend.
+			// Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
+			// kwalifikacyjnych z agendy "A" oraz takiego samego zbioru wykluczających się 
+			// reguł kwalifikacyjnych z agendy "B"
+			kSession.getAgenda().getAgendaGroup("one_set_of_rules_agenda_a").setFocus();
+			kSession.getAgenda().getAgendaGroup("one_set_of_rules_agenda_b").setFocus();
+			break;
+		case 4:
+			// Set 1. Example 4.
 			// OPIS: Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
 			// kwalifikacyjnych oraz zbiorów reguł bez określonej agenda-group tj. z agendy 'MAIN'.
 			// UWAGA: W celu wykonania testu niniejszego przykładu należy w zbiorze
@@ -76,16 +85,16 @@ public class UniversityMainVerySimple {
 			// Po przeprowadzeniu testów należy odkomentować w/w wiersz.
 			kSession.getAgenda().getAgendaGroup("one_set_of_rules").setFocus();
 			break;
-		case 4:
-			// Set 1. Example 4.
+		case 5:
+			// Set 1. Example 5.
 			// OPIS: Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
 			// kwalifikacyjnych z MODFIKACJĄ faktu powodującą uruchomienie ponownego
 			// wnioskowania.
 			// PYTANIE: W jakim celu używany jest counter?
 			kSession.getAgenda().getAgendaGroup("one_set_of_rules_MODIFY").setFocus();
 			break;
-		case 5:
-			// Set 1. Example 5.
+		case 6:
+			// Set 1. Example 6.
 			// OPIS: Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
 			// kwalifikacyjnych z MODFIKACJĄ faktu powodującą uruchomienie ponownego
 			// wnioskowania
