@@ -19,8 +19,8 @@ public class UniversityMain {
 		kSession.insert(uc);		
 		
 		kSession.fireAllRules();
+
 		kSession.dispose();
 		
 	}
-
 }
