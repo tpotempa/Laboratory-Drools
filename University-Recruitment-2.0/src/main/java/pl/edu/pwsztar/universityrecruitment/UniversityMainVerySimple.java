@@ -43,7 +43,7 @@ public class UniversityMainVerySimple {
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 
 		// Uruchamiany przykład
-		Integer example = 5;
+		Integer example = 6;
 
 		switch (example) {
 		case 1:
@@ -58,7 +58,7 @@ public class UniversityMainVerySimple {
 			// UWAGA: W celu wykonania testu niniejszego przykładu należy w zbiorze
 			// reguł Main_OlympicQualification.drl zakomentować n/w wiersz: 
 			// agenda-group "do_not_focus_automatically"
-			// Po przeprowadzeniu testów należy odkomentować w/w wiersz.
+			// Po przeprowadzeniu testów w/w wiersz należy pozostawić zakomentowany.
 			break;
 		case 2:
 			// Set 1. Example 2.
@@ -78,11 +78,11 @@ public class UniversityMainVerySimple {
 		case 4:
 			// Set 1. Example 4.
 			// OPIS: Uruchamianie 1 zbioru składającego się z 3 wykluczających się reguł
-			// kwalifikacyjnych oraz zbiorów reguł bez określonej agenda-group tj. z agendy 'MAIN'.
+			// kwalifikacyjnych.
 			// UWAGA: W celu wykonania testu niniejszego przykładu należy w zbiorze
-			// reguł MainOlympicQualification.drl zakomentować n/w wiersz: 
+			// reguł MainOlympicQualification.drl odkomentować n/w wiersz: 
 			// agenda-group "do_not_focus_automatically"
-			// Po przeprowadzeniu testów należy odkomentować w/w wiersz.
+			// Po przeprowadzeniu testów w/w wiersz należy pozostawić odkomentowany.
 			kSession.getAgenda().getAgendaGroup("one_set_of_rules").setFocus();
 			break;
 		case 5:
