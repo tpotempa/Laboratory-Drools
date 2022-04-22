@@ -38,7 +38,7 @@ public class UniversityMainVerySimple {
 		
 		// ZESTAW REGUŁ BARDZO PROSTYCH
 		// HOW-TO :: Uruchomienie przykładu.
-		// Każdy przykład (Example 1 - Example 5) należy uruchamiać niezależnie.
+		// Każdy przykład (Example 1 - Example 6) należy uruchamiać niezależnie.
 		// W celu uruchomienia określonego przykładu należy ustawić wartość zmiennej example. 
 		// Rezultaty działania silnika wnioskującego są zwracane w oknie konsoli.
 
