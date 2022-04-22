@@ -47,16 +47,30 @@ public class UniversityMainExpert {
 		esr5.add(new ExamSubjectResult("język angielski", "podstawowy", 77D));
 		esr5.add(new ExamSubjectResult("chemia", "rozszerzony", 100D));
 
+		ArrayList<ExamSubjectResult> esr6 = new ArrayList<>();
+		esr6.add(new ExamSubjectResult("język polski", "podstawowy", 80D));
+		esr6.add(new ExamSubjectResult("matematyka", "rozszerzony", 46D));
+		esr6.add(new ExamSubjectResult("język angielski", "podstawowy", 45D));
+		esr6.add(new ExamSubjectResult("biologia", "rozszerzony", 80D));
+		esr6.add(new ExamSubjectResult("chemia", "rozszerzony", 68D));
+
+		ArrayList<ExamSubjectResult> esr7 = new ArrayList<>();
+		esr7.add(new ExamSubjectResult("język polski", "rozszerzony", 90D));
+		esr7.add(new ExamSubjectResult("matematyka", "podstawowy", 80D));
+		esr7.add(new ExamSubjectResult("język angielski", "podstawowy", 90D));
+
 		UniversityCandidate uc1 = new UniversityCandidate(1L, "Anna", "Kowalewska", esr1, Boolean.FALSE, "Informatyka", Boolean.TRUE, "Female");
 		UniversityCandidate uc2 = new UniversityCandidate(2L, "Jacek", "Nowak", esr2, Boolean.FALSE, "Informatyka", Boolean.FALSE, "Male");		
 		UniversityCandidate uc3 = new UniversityCandidate(3L, "Ewa", "Wiśniowa", esr3, Boolean.FALSE, "Elektrotechnika", Boolean.FALSE, "Female");
 		UniversityCandidate uc4 = new UniversityCandidate(4L, "Karol", "Gruszka", esr4, Boolean.FALSE, "Automatyka i robotyka", Boolean.TRUE, "Male");
 		UniversityCandidate uc5 = new UniversityCandidate(5L, "Kinga", "Poziomka", esr5, Boolean.FALSE, "Elektrotechnika", Boolean.TRUE, "Female");
+		UniversityCandidate uc6 = new UniversityCandidate(6L, "Maja", "Czereśnia", esr6, Boolean.FALSE, "Pielęgniarstwo", Boolean.TRUE, "Female");
+		UniversityCandidate uc7 = new UniversityCandidate(7L, "Karol", "Dąb", esr7, Boolean.FALSE, "Psychologia", Boolean.FALSE, "Male");
 			
 		// Utworzenie kolekcji faktów
 		// Przetwarzanie powinno być realizowane TYLKO dla pojedynczego faktu
 		List<UniversityCandidate> uc = new ArrayList<UniversityCandidate>();
-		uc.add(uc1);
+		uc.add(uc7);
 		
 		// Dodanie faktów do przetwarzania
 		for(UniversityCandidate fact:uc) {
@@ -65,13 +79,14 @@ public class UniversityMainExpert {
 
 		// Uruchomienie zbiorów reguł kwalifikacyjnych "exam_result_calculation"
 		kSession.getAgenda().getAgendaGroup("exam_result_calculation").setFocus();
-		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.addEventListener(new DebugAgendaEventListener());
 		kSession.addEventListener(new DebugRuleRuntimeEventListener());
 		KieRuntimeLogger logger = ks.getLoggers().newFileLogger(kSession, "./rules-logger");
 		
+		System.out.println("Number of facts in Working Memory (Entry Point): " + kSession.getFactCount());
 		kSession.fireAllRules();
 		System.out.println("Number of facts in Working Memory (Exit Point): " + kSession.getFactCount());
+
 		kSession.dispose();
 				
 		// Logowanie zebranych informacji
@@ -79,5 +94,4 @@ public class UniversityMainExpert {
 			System.out.println(fact.getCandidateInformation());
 		}
 	}
-
 }

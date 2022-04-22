@@ -7,7 +7,7 @@ rule "Olympic qualification (two_sets_of_rules_salience_no-loop_bonus_MODIFY)"
 dialect "java"
 agenda-group "two_sets_of_rules_salience_no-loop_bonus_MODIFY"
 salience 200
-no-loop true
+no-loop false
 when
     $uc : UniversityCandidate(olympicFinalist == true);
 then

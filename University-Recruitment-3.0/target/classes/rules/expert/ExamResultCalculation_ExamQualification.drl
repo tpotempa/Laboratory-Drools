@@ -53,3 +53,39 @@ then
    	$uc.setQualificationType("Exam qualification");
    	$uc.appendLogger("Rule 'Exam qualification / Elektrotechnika' fired!");
 end
+
+
+// Pielęgniarstwo
+rule "Exam Qualification / Pielęgniarstwo (exam_result_calculation)"
+dialect "java"
+agenda-group "exam_result_calculation"
+salience 250
+activation-group "group-qualification"
+//lock-on-active true
+
+when
+    $uc : UniversityCandidate(fieldOfStudy == "Pielęgniarstwo", examResult >= 180.0D);
+then
+ 	$uc.appendLogger("Total candidate exam result = " + $uc.getExamResult() + "Minimum required exam result 180.0D");
+	$uc.setAdmission(true);
+   	$uc.setQualificationType("Exam qualification");
+   	$uc.appendLogger("Rule 'Exam qualification / Pielęgniarstwo' fired!");
+end
+
+
+// Psychologia
+rule "Exam Qualification / Psychologia (exam_result_calculation)"
+dialect "java"
+agenda-group "exam_result_calculation"
+salience 250
+activation-group "group-qualification"
+//lock-on-active true
+
+when
+    $uc : UniversityCandidate(fieldOfStudy == "Psychologia", examResult >= 150.0D);
+then
+ 	$uc.appendLogger("Total candidate exam result = " + $uc.getExamResult() + "Minimum required exam result 150.0D");
+	$uc.setAdmission(true);
+   	$uc.setQualificationType("Exam qualification");
+   	$uc.appendLogger("Rule 'Exam qualification / Psychologia' fired!");
+end

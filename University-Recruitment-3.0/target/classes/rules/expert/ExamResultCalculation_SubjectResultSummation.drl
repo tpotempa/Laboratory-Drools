@@ -58,3 +58,39 @@ then
     }
   	retract($esr);
 end
+
+// Pielęgniarstwo
+rule "Subject result summation / Pielęgniarstwo (exam_result_calculation)"
+dialect "java"
+agenda-group "exam_result_calculation"
+salience 400
+
+when
+    $uc : UniversityCandidate(fieldOfStudy == 'Pielęgniarstwo');
+    $esr : ExamSubjectResult(examSubject in ('chemia', 'biologia'));
+then
+	modify($uc) {
+    	appendLogger("Rule 'Subject result summation (exam_result_calculation)' fired! Exam result = "
+    	 			 + $uc.getExamResult() + " + " + $esr.getExamResult() + " (" + $esr.getExamSubject() + ")"),  	
+  		setExamResult($uc.getExamResult() + $esr.getExamResult())
+    }
+  	retract($esr);
+end
+
+// Psychologia
+rule "Subject result summation / Psychologia (exam_result_calculation)"
+dialect "java"
+agenda-group "exam_result_calculation"
+salience 400
+
+when
+    $uc : UniversityCandidate(fieldOfStudy == 'Psychologia');
+    $esr : ExamSubjectResult(examSubject in ('język polski'));
+then
+	modify($uc) {
+    	appendLogger("Rule 'Subject result summation (exam_result_calculation)' fired! Exam result = "
+    	 			 + $uc.getExamResult() + " + " + $esr.getExamResult() + " (" + $esr.getExamSubject() + ")"),  	
+  		setExamResult($uc.getExamResult() + $esr.getExamResult())
+    }
+  	retract($esr);
+end
